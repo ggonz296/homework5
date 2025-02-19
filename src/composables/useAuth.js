@@ -5,7 +5,7 @@ import { useAuth as firebaseAuth } from '@vueuse/firebase/useAuth'
 
 const auth = getAuth(firebaseApp) //gets authentication from firebase
 
-const { isAuthenticated, user } = firbaseAuth(auth) //will validate user with firebase
+const { isAuthenticated, user } = firebaseAuth(auth) //will validate user with firebase
 
 export const useAuth = () => {
     const login = async (username, password) => {
