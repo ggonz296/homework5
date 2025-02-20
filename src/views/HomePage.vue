@@ -1,9 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 import MainCards from '@/components/MainCards.vue'
-const title = ref('Hello There ✋')
+import MainPagination from '@/components/MainPagination.vue'
 </script>
 
 <template>
-  <MainCards></MainCards>  
+  <MainCards></MainCards> 
+  <MainPagination></MainPagination> 
 </template>
